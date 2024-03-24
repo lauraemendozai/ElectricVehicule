@@ -13,8 +13,8 @@ import pages.BasePage;
                 plugin = { "pretty", "html:target/cucumber-reports" })    
  
 public class runner {
-        // @AfterClass
-        // public static void cleanDriver() {
-        //     BasePage.closeBrowser();
-        // }
+        @AfterClass
+        public static void cleanDriver() {
+            BasePage.closeBrowser();
+        }
 }
